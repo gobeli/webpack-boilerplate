@@ -2,6 +2,7 @@
 import MathFunctions from './modules/math'
 //Import specific function
 import {subtract} from './modules/math'
+import $ from 'jquery'
 
 console.log(`3+5 = ${MathFunctions.add(3,5)}`)
 console.log(`5-3 = ${subtract(5,2)}`)
@@ -9,7 +10,7 @@ console.log(`3*5 = ${MathFunctions.multiply(3,5)}`)
 console.log(`5/3 = ${MathFunctions.divide(5,3)}`)
 
 //ES6 stuff
-let lis = document.querySelectorAll('ul li');
+let lis = $('ul.list li')
 Array.from(lis).forEach(li => {
     console.log(li.innerHTML);
 });
